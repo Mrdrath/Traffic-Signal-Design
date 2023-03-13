@@ -46,15 +46,15 @@ const C0 = (1.5*L +5)/(1-Y);
   document.getElementById("y").textContent = Y.toFixed(2);
 
   const effectiveSignalTime1 = y1*(C0 -L) / Y ;
-  document.getElementById("effectiveSignalTime1").textContent = effectiveSignalTime1.toFixed(0);
+  document.getElementById("effectiveSignalTime1").textContent = effectiveSignalTime1.toFixed(2);
 
   const effectiveSignalTime2 = y2 *(C0 -L)/ Y ;
-  document.getElementById("effectiveSignalTime2").textContent = effectiveSignalTime2.toFixed(0);
+  document.getElementById("effectiveSignalTime2").textContent = effectiveSignalTime2.toFixed(2);
 
   const effectiveSignalTime3 = y3*(C0 -L) / Y ;
-  document.getElementById("effectiveSignalTime3").textContent = effectiveSignalTime3.toFixed(0);
+  document.getElementById("effectiveSignalTime3").textContent = effectiveSignalTime3.toFixed(2);
 
-  document.getElementById("cyclelength").textContent = parseInt(effectiveSignalTime1.toFixed(0)) + parseInt(effectiveSignalTime2.toFixed(0)) + parseInt(effectiveSignalTime3.toFixed(0)) +parseInt(6)+ parseInt(9);
+  document.getElementById("cyclelength").textContent = parseInt(effectiveSignalTime1.toFixed(2)) + parseInt(effectiveSignalTime2.toFixed(2)) + parseInt(effectiveSignalTime3.toFixed(2)) +parseInt(6)+ parseInt(9);
 
 
   
