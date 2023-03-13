@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webster Method Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- <img src="tafficlight.png" alt="pngfile" id="tarffic"></img> -->
+	<h1>Webster Method Calculator</h1>
+	<div class="container">
+		<span>
+		<form id="calculatorForm">
+			<label for="normalNorthSouthFlow">Normal Flow (Movement 1):</label>
+			<input type="number" id="normalNorthSouthFlow" name="normalNorthSouthFlow" placeholder="Enter normal flow in PCU/hr">
+			<label for="normalNorthFlow">Normal Flow (Movement 2):</label>
+			<input type="number" id="normalNorthFlow" name="normalNorthFlow" placeholder="Enter normal flow in PCU/hr">
+			<label for="normalEastWestFlow">Normal Flow (Movement 3):</label>
+      <input type="number" id="normalEastWestFlow" name="normalEastWestFlow" placeholder="Enter normal flow in PCU/hr">
+
+			<label for="saturationNorthFlow">Saturation Flow (Movement 1):</label>
+			<input type="number" id="saturationNorthFlow" name="saturationNorthFlow" placeholder="Enter saturation flow in PCU/hr">
+			<label for="saturationEastFlow">Saturation Flow (Movement 2):</label>
+			<input type="number" id="saturationEastFlow" name="saturationEastFlow" placeholder="Enter saturation flow in PCU/hr">
+			<label for="saturationSouthFlow">Saturation Flow (Movement 3):</label>
+			<input type="number" id="saturationSouthFlow" name="saturationSouthFlow" placeholder="Enter saturation flow in PCU/hr">
+			<!-- <label for="saturationWestFlow">Saturation Flow (West direction):</label>
+			<input type="number" id="saturationWestFlow" name="saturationWestFlow" placeholder="Enter saturation flow in PCU/hr"> -->
+			<label for="allRedTime">All Red Time:</label>
+			<input type="number" id="allRedTime" name="allRedTime" placeholder="Enter all red time in seconds">
+
+			<label for="totalLostTime">Total lost time L: </label>
+			<input type="number" id="totalLostTime" name="totalLostTime" placeholder="total Lost Time">
+			<!-- <p>Total lost time L: <span id="totalLostTime"></span> seconds</p> -->
+			<input type="button" value="Calculate" onclick= calculate()  />
+		</form>
+</span>
+ <span>
+  <div id="values">
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+    <p>Critical flow ratio y<sub>a</sub>: <span id="flowRatioA"></span> PCU/hr</p>
+		<p>Critical flow ratio y<sub>b</sub>: <span id="flowRatioB"></span> PCU/hr</p>
+		<p>Critical flow ratio y<sub>c</sub>: <span id="flowRatioC"></span> PCU/hr</p>
+ <!-- <lable for="criticalflowya">Critical flow ratio y<sub>a</sub>:</lable> -->
+ <!-- <input type="number" id="criticalflowya" name="criticalflowya" /><br /> -->
+		 <p>Y: <span id="y"></span> PCU/hr</p>
+		<!-- <p>Effective green time per phase: <span id="effectiveGreenTime"></span> seconds</p> -->
+		<p>Effective signal green time for phase 1: <span id="effectiveSignalTime1"></span> seconds</p>
+		<p>Effective signal green time for phase 2: <span id="effectiveSignalTime2"></span> seconds</p>
+		<p>Effective signal green time for phase 3: <span id="effectiveSignalTime3"></span> seconds</p>
+		<p>Amber time = 2seconds  </p>
+		<p>total amber time for 3 phases = 6 seconds</p>
+		<P> Considering all pedstrain time = 9 seconds</P>
+		<p>Total Cycle Length: <span id="cyclelength"></span> seconds</p>
+    </div>
+		</span>
+	</div>
+	<div  class="container">
+   <h3 text-decoration= "underline">Phase-1</h3>
+    <div id="Phase1"> <span id="green1"></span><span id="amber1"></span><span id="red1"></span></div>
+   </div>
+	<script type="text/javascript" src="calc.js"></script>
+</body>
+</html>

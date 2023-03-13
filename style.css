@@ -1,0 +1,93 @@
+/* Style the heading */
+body{
+  background-image: url("tafficlight.png");
+  background-color: #26382796;
+  opacity: 0.9;
+  
+}
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+/* style of the value */
+values{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  display: inline-block;
+}
+/* Style the labels */
+label {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Style the input fields */
+input[type="number"] {
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 18px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the Calculate button */
+input[type="button"] {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #3E8E41;
+}
+
+/* Style the container div */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: #e5e3e3;
+  background-image: url("nithlogo.png");
+  background-repeat:no-repeat;
+  background-position-x: center;
+  background-position-y:center;
+  background-blend-mode: 0.8;
+
+  /* display: inline-block; */
+
+}
+
+/* Style the output text */
+p {
+  margin-top: 10px;
+  font-size: 18px;
+}
