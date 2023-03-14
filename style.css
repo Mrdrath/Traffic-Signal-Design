@@ -78,9 +78,11 @@ input[type="button"]:hover {
   background-color: #e5e3e3;
   background-image: url("nithlogo.png");
   background-repeat:no-repeat;
-  background-position-x: center;
+  background-position-x:center;
   background-position-y:center;
+  background-size: 150px 150px;
   background-blend-mode: 0.8;
+  background-position-x:375px;
 
   /* display: inline-block; */
 
